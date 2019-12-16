@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.screeenrecordernative">
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_app_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:requestLegacyExternalStorage="true">
+
+        <activity android:name=".SettingsActivity"
+            android:launchMode="singleTop"
+            android:noHistory="true">
+        </activity>
+        <activity
+            android:name=".ViewImageActivity"
+            android:parentActivityName=".SettingsActivity"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".TakeScreenShotActivity"
+            android:excludeFromRecents="true"
+            android:theme="@style/AppTransparentTheme"
+            android:noHistory="true"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".ViewVideoActivity"
+            android:parentActivityName=".SettingsActivity"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".RecordActivity"
+            android:excludeFromRecents="true"
+            android:theme="@style/AppTransparentTheme"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".MainActivity"
+            android:excludeFromRecents="true"
+            android:theme="@style/AppTransparentTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <receiver android:name=".NotificationReceiver"></receiver>
+        <service android:enabled="true"
+            android:name=".ForegroundService"
+            android:foregroundServiceType="mediaProjection"/>
+        <service android:enabled="true" android:name=".ControlBar"/>
+    </application>
+
+</manifest>

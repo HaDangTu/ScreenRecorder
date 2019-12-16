@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Screen Recorder</string>
+    <string name="btSettingsName">Settings</string>
+    <string name="btTakeScreenshotName">Screenshot</string>
+    <string name="btVideoName">Video</string>
+    <string name="btExitName">Exit</string>
+    <string name="btLibraryName">Library</string>
+    <string name="title">Screen Recorder</string>
+    <string name="avatar">Avatar</string>
+    <string name="description">Nhấn vào đây để bật control bar</string>
+    <string name="btPauseName">Pause</string>
+    <string name="btStopName">Stop</string>
+    <string name="timer">00:00:00</string>
+    <string name="titleVideoConfigure">Cấu hình Video</string>
+    <string name="titleDisplayOption">Tùy chọn hiển thị</string>
+
+    <string name="summary">%1$s</string>
+    <string name="titleSwitchDisplayTimer">Hiển thị thời gian quay</string>
+    <string name="titleResolution">Độ phân giải</string>
+    <string name="titleFPS">Tốc độ khung hình</string>
+    <string name="titleOrientations">Hướng</string>
+    <string name="titleBitRate">Bitrate</string>
+    <string name="titleSpeed">Tốc độ</string>
+    <string name="titleStorage">Lưu trữ</string>
+    <string name="defaultValueResolution">1</string>
+    <string name="defaultValueBitrate">0</string>
+    <string name="defaultValueFPS">30</string>
+    <string name="defaultValueOrientation">100</string>
+    <string name="defaultValueSpeed">1</string>
+    <string name="imVidItemDescription">Preview video</string>
+    <string name="imge_content_description">screenshot</string>
+    <string name="btDelete">Delete</string>
+    <string name="menuItemSelectAll">Select all</string>
+    <string name="menuItemClose">close</string>
+    <string name="storageVideoPath">/storage/emulated/0/ScreenRecord</string>
+    <string name="storageImagePath">/storage/emulated/0/ScreenRecord/Screenshot</string>
+</resources>

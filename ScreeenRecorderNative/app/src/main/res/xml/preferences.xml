@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <EditTextPreference
+        android:layout="@layout/text_view_video_configure_layout"/>
+
+    <ListPreference
+        android:defaultValue="@string/defaultValueResolution"
+        android:entries="@array/resolutions"
+        android:entryValues="@array/resolution_values"
+        android:icon="@drawable/ic_action_resolution"
+        android:key="list_resolution"
+        android:summary="@string/summary"
+        android:title="@string/titleResolution" />
+
+    <ListPreference
+        android:key="list_fps"
+        android:defaultValue="@string/defaultValueFPS"
+        android:entries="@array/frame_rates"
+        android:entryValues="@array/frame_rate_values"
+        android:title="@string/titleFPS"
+        android:summary="@string/summary"
+        android:icon="@drawable/ic_action_fps"/>
+
+    <ListPreference
+        android:key="list_bit_rate"
+        android:defaultValue="@string/defaultValueBitrate"
+        android:entries="@array/bit_rates"
+        android:entryValues="@array/bit_rate_values"
+        android:title="@string/titleBitRate"
+        android:summary="@string/summary"
+        android:icon="@drawable/ic_action_bitrate"/>
+
+    <ListPreference
+        android:key="list_orientation"
+        android:defaultValue="@string/defaultValueOrientation"
+        android:entries="@array/orientations"
+        android:entryValues="@array/orientation_values"
+        android:title="@string/titleOrientations"
+        android:summary="@string/summary"
+        android:icon="@drawable/ic_action_rotation"/>
+
+<!--    <ListPreference-->
+<!--        android:key="list_speed"-->
+<!--        android:defaultValue="@string/defaultValueSpeed"-->
+<!--        android:entries="@array/speeds"-->
+<!--        android:entryValues="@array/speed_values"-->
+<!--        android:title="@string/titleSpeed"-->
+<!--        android:summary="@string/summary"-->
+<!--        android:icon="@drawable/ic_action_speed"/>-->
+
+    <EditTextPreference
+        android:layout="@layout/text_view_display_option_layout" />
+
+    <SwitchPreferenceCompat
+        android:defaultValue="true"
+        android:key="switch_display_timer"
+        android:title="@string/titleSwitchDisplayTimer"
+        android:icon="@drawable/ic_action_timer"/>
+
+    <EditTextPreference
+        android:layout="@layout/text_view_storage_layout"/>
+
+    <EditTextPreference
+        android:key="edit_storage"
+        android:defaultValue="@string/storageVideoPath"
+        android:title="Storage"
+        android:summary="@string/storageVideoPath"/>
+</PreferenceScreen>

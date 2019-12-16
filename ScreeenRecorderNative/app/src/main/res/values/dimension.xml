@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="notificationButton">0dp</dimen>
+    <dimen name="marginStartEnd">20dp</dimen>
+    <dimen name="dimenAvatar">60dp</dimen>
+    <dimen name="dimenImageVideoWidth">100dp</dimen>
+    <dimen name="dimenImageVideoHeight">77dp</dimen>
+    <dimen name="buttonSize">35dp</dimen>
+</resources>

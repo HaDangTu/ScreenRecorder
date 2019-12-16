@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="5dp"
+        android:paddingBottom="5dp"
+        android:layout_marginBottom="5dp">
+
+        <ImageView
+            android:layout_width="@dimen/dimenAvatar"
+            android:layout_height="@dimen/dimenAvatar"
+            android:contentDescription="@string/avatar"
+            style="@style/Avatar"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginStart="10dp">
+
+            <TextView
+                android:id="@+id/title_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/title"
+                android:textSize="20sp"
+                android:textColor="@color/colorTextNotification"/>
+
+            <TextView
+                android:id="@+id/content_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/description"
+                android:textSize="15sp"
+                android:textColor="@color/colorTextNotification"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout style="@style/Separator"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+
+        <Button
+            android:id="@+id/btSettings"
+            android:layout_width="@dimen/notificationButton"
+            android:layout_height="wrap_content"
+            android:text="@string/btSettingsName"
+            android:drawableTop="@drawable/ic_action_settings"
+            style="@style/ButtonNotification"/>
+
+        <Button
+            android:id="@+id/btScreenshot"
+            android:layout_width="@dimen/notificationButton"
+            android:layout_height="wrap_content"
+            android:text="@string/btTakeScreenshotName"
+            android:drawableTop="@drawable/ic_action_screen_shot"
+            style="@style/ButtonNotification"/>
+
+        <Button
+            android:id="@+id/btVideo"
+            android:layout_width="@dimen/notificationButton"
+            android:layout_height="wrap_content"
+            android:text="@string/btVideoName"
+            android:drawableTop="@drawable/ic_action_video"
+            android:drawableTint="@color/colorBackgroundIcon"
+            style="@style/ButtonNotification" />
+
+        <Button
+            android:id="@+id/btLibrary"
+            android:layout_width="@dimen/notificationButton"
+            android:layout_height="wrap_content"
+            android:text="@string/btLibraryName"
+            android:drawableTop="@drawable/ic_action_library"
+            style="@style/ButtonNotification"/>
+
+        <Button
+            android:id="@+id/btExit"
+            android:layout_width="@dimen/notificationButton"
+            android:layout_height="wrap_content"
+            android:text="@string/btExitName"
+            android:drawableTop="@drawable/ic_action_close"
+            style="@style/ButtonNotification"/>
+    </LinearLayout>
+</LinearLayout>
